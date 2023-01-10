@@ -51,7 +51,7 @@ function calcularSueldoNeto() {
     Jubilacion: $${componentesSueldoNeto.jubilacion}<br>
     Obra Social: $${componentesSueldoNeto.obraSocial}<br>
     PAMI: $${componentesSueldoNeto.pami} <br>
-    Sueldo neto: $${componentesSueldoNeto.sueldoNeto}
+    Sueldo neto: $${componentesSueldoNeto.sueldoNeto}<br><br>
   `;
 
   historial.push(resultado);
@@ -62,7 +62,7 @@ function calcularSueldoNeto() {
 function agregarAlHistorial(historial) {
   historialDiv.innerHTML = "";
 
-  for (let i = 0; i < historial.length; i++) {
+  for (let i = historial.length - 1; i >= 0; i--) {
     let divResultado = plantillaDivResultado.cloneNode();
     divResultado.innerHTML = historial[i];
     historialDiv.appendChild(divResultado);
