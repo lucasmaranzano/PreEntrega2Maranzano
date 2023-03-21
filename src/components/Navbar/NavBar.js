@@ -3,6 +3,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
 import logo from "../images/logo.png";
 import "./NavBar.css";
+import Shop from "./CartWidget";
 
 const NavBar = () => {
   return (
@@ -21,9 +22,8 @@ const NavBar = () => {
 
           <Nav>
             <Nav.Link href="#">
-              6
               <span>
-                <FaShoppingCart size={32} />
+                <Shop />
               </span>
             </Nav.Link>
           </Nav>

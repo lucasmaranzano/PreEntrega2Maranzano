@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const CartWidget = (props) => {
   return (
     <div className="cart-widget">
-      <FaShoppingCart />
+      7<FaShoppingCart size={30} />
     </div>
   );
 };
