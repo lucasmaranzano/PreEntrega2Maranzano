@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import { FaShoppingCart } from "react-icons/fa";
 import logo from "../images/logo.png";
 import "./NavBar.css";
 import Shop from "./CartWidget";
