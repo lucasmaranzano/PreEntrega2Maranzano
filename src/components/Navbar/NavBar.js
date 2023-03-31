@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import logo from "../images/logo.png";
 import "./NavBar.css";
-import Shop from "./CartWidget";
+import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -11,7 +11,7 @@ const NavBar = () => {
       <Container>
         <Link to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="80" />
+            <img src={logo} alt="logo" className="logo-img" />
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,14 +23,14 @@ const NavBar = () => {
           </Nav>
 
           <Nav>
-            <Nav.Link href="#">
-              <span>
-                <Shop />
-              </span>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+          <Link to="/" className="text-dark text-decoration-none">
+            <span>
+              <CartWidget />
+            </span>
+          </Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
     </Navbar>
   );
 };

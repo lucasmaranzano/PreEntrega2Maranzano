@@ -16,7 +16,7 @@ function ItemDetailContainer() {
   return (
     <div className="container">
       {product && (
-        <div className="card shadow-sm w-50 mx-auto m-5">
+        <div className="card shadow-sm w-75 mx-auto m-5">
           <h1 className="text-center mt-3">{product.title}</h1>
           <img src={product.image} alt={product.title} className="card-img-top" />
           <div className="card-body">

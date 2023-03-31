@@ -5,3 +5,8 @@
 .custom-nav-links a {
   font-size: 1.5rem;
 }
+
+.logo-img {
+  width: 100%;
+  max-width: 20rem;
+}
