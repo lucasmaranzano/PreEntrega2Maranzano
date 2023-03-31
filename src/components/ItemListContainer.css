@@ -1,0 +1,14 @@
+.custom-img {
+    max-height: 20rem;
+    object-fit: contain;
+  }
+  
+
+  .sddd {
+    transition: transform 0.3s;
+  }
+  
+  .sddd:hover {
+    transform: scale(1.03);
+  }
+  
